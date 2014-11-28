@@ -12,6 +12,14 @@ Analysis of three-month #1reasonwhy Tweets
 ##Curation
 The Curation code parsed the raw data from GNIP and output the clean data with new schema. The output is one json file of all data with one tweet object per line. Each further research was based on the clean data.    
 GNIP has a huge [documentation](http://support.gnip.com/sources/twitter/data_format.html), sometimes it causes confusion.    
+
+##Tweets-Authors
+This piece goes through all clean data and generates 25 top retweeted tweets as well as their authors.    
+The outputs are two json files.   
+25 top tweets: include top 25 tweets objects.
+Authors: include a list of author objects who created the top 25 retweeted tweets.    
+See more about this part [here](https://medium.com/@CiciRaoXi/1reasonwhy-authority-f1ce39ac6ec).
+
 This is our clean data(in JSON):
 
 <pre><code>
@@ -44,7 +52,7 @@ This is our clean data(in JSON):
 }
 </code></pre>
 
-###Data Format
+####Data Format    
 <table>
     <tr>
         <td><code>rtCount</code></td>
@@ -81,5 +89,5 @@ This is our clean data(in JSON):
     <tr>
         <td><code>author</code></td>
         <td>The author of this tweet. An object with two properties: handle and id. </td>
-    </tr>
-##############
+    </tr>    
+
