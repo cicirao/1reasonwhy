@@ -44,6 +44,7 @@ This is our clean data(in JSON):
 }
 </code></pre>
 
+###Data Format
 <table>
     <tr>
         <td><code>rtCount</code></td>
@@ -81,12 +82,4 @@ This is our clean data(in JSON):
         <td><code>author</code></td>
         <td>The author of this tweet. An object with two properties: handle and id. </td>
     </tr>
- 
-##Tweets-Authors
-This piece goes through all clean data and generates 25 top retweeted tweets as well as their authors.    
-The outputs are two json files.   
-25 top tweets: include top 25 tweets objects.
-Authors: include a list of author objects who created the top 25 retweeted tweets.
-    
-See more about this part [here](https://medium.com/@CiciRaoXi/1reasonwhy-authority-f1ce39ac6ec).
-
+##############
