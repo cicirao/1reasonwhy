@@ -1,4 +1,4 @@
-1reasonwhy
+\#1ReasonWhy
 ==========
 
 Analysis of three-month #1reasonwhy Tweets
@@ -6,10 +6,11 @@ Analysis of three-month #1reasonwhy Tweets
 * This repository only include all Python codes, not any data.
 * The raw data comes from [GNIP](http://gnip.com/) Twitter data.
 
-'1ReasonWhy' is a Twitter hashtag created by people who care about the unfair treatment to women in the game industry. According to our current research, people’s focus has been expanded to not only women in the game industry but also all women gamers. This project is aiming at analyzing three-month tweets with #1ReasonWhy in order to understand the humanities knowledge behind.
+'1ReasonWhy' is a Twitter hashtag created by people who care about the unfair treatment to women in the game industry. According to our current research, people’s focus has been expanded to not only women in the game industry but also all women gamers. This project is aiming at analyzing three-month tweets with #1ReasonWhy in order to understand the humanities knowledge behind.    
+(see initial propose [here](https://medium.com/research-methods-in-digital-humanities/project-1reasonwhy-17022abf3bd9))
 
 ##Curation
-The Curation code parsed the raw data from GNIP and output the clean data with new schema.    
+The Curation code parsed the raw data from GNIP and output the clean data with new schema. The output is one json file of all data with one tweet object per line. Each further research was based on the clean data.    
 GNIP has a huge [documentation](http://support.gnip.com/sources/twitter/data_format.html), sometimes it causes confusion.    
 This is our clean data(in JSON):
 
@@ -81,3 +82,11 @@ This is our clean data(in JSON):
         <td>The author of this tweet. An object with two properties: handle and id. </td>
     </tr>
  
+##Tweets-Authors
+This piece goes through all clean data and generates 25 top retweeted tweets as well as their authors.    
+The outputs are two json files.   
+25 top tweets: include top 25 tweets objects.
+Authors: include a list of author objects who created the top 25 retweeted tweets.
+    
+See more about this part [here](https://medium.com/@CiciRaoXi/1reasonwhy-authority-f1ce39ac6ec).
+
