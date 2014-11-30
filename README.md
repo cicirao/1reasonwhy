@@ -16,7 +16,7 @@ GNIP has a huge [documentation](http://support.gnip.com/sources/twitter/data_for
 ##Tweets-Authors
 This piece goes through all clean data and generates 25 top retweeted tweets as well as their authors.    
 The outputs are two json files.   
-25 top tweets: include top 25 tweets objects.
+25 top tweets: include top 25 tweets objects.     
 Authors: include a list of author objects who created the top 25 retweeted tweets.    
 See more about this part [here](https://medium.com/@CiciRaoXi/1reasonwhy-authority-f1ce39ac6ec).
 
